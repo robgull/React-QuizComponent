@@ -4,10 +4,13 @@ let quizData = require('./quiz_data.json');
 
 class Quiz extends Component
 {
-
+    constructor(props){
+        super(props);
+        this.state = {quiz_postition: 1}
+    }
     render()
     {
-        return <div>Quiz</div>
+        return <div><div className="QuizQuestions">{quizData.quiz_questions[0].instruction_text}</div></div>
     }
 }
 export default Quiz;
