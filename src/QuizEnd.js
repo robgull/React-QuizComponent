@@ -1,17 +1,15 @@
 import React, { Component } from 'react';
 
 class QuizEnd extends Component{
-    constructor(prop)
-    {
-        super(props);
-    }
 
     render()
     {
-        return <div>
+        return (
+        <div>
         <p>Thanks for playing!</p>
         <a href=''>Reset Quiz</a>
       </div>
+        )
     }
 
 }
